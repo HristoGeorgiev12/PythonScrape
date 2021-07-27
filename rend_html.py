@@ -19,12 +19,11 @@ for size in sizes_all:
     sizes.append(size.text)
 
 json_dict = {
-  "name": str(name.text),
+  "name": name.text,
   "price": float(price.text.replace('£', '')),
-  "color": str(color.text),
-  "size": list(sizes)
+  "color": color.text,
+  "size": sizes
 }
-
 
 print(json_dict)
 
